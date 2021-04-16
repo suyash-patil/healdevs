@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import { auth } from './firebase';
 import { Switch, Route } from "react-router-dom";
 import Login from './auth/Login';
+import Landing from './components/Landing';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -24,7 +25,7 @@ const App = () => {
   }, [])
   return (
     <Switch>
-      <Route path='/' />
+      <Route exact path='/' component={Landing} />
       <Route exact path='/login' component={Login} />
     </Switch>
   );
