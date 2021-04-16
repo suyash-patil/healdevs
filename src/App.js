@@ -4,7 +4,9 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import { auth } from './firebase'
+import { auth } from './firebase';
+import { Switch, Route } from "react-router-dom";
+import Login from './auth/Login';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -21,13 +23,10 @@ const App = () => {
     return () => unSubscribe();
   }, [])
   return (
-    <div className="App">
-
-      <Header />
-      <Navbar />
-      <Footer />
-
-    </div>
+    <Switch>
+      <Route path='/' />
+      <Route exact path='/login' component={Login} />
+    </Switch>
   );
 }
 
