@@ -11,7 +11,11 @@ const Login = ({ history, user, setUser }) => {
       const { user } = result;
       const idTokenResult = await user.getIdTokenResult();
       setUser({ email: user.email, token: idTokenResult.token })
-      history.push("/patient");
+      if (user.email === "pullstackdevelopers@gmail.com") {
+        history.push("/doctor");
+      }
+      else
+        history.push("/patient");
     }).catch((err) => {
       console.log(err)
     })
@@ -34,8 +38,8 @@ const Login = ({ history, user, setUser }) => {
           </button>
           </div>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
   )
 }
 
