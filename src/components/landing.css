@@ -1,41 +1,42 @@
 .landing-home {
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    padding-top: 30vh;
-    text-align: center;
-    background-image: url(../images/img3.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  padding-top: 30vh;
+  text-align: center;
+  background-image: url(../images/img3.jpg);
 }
 
-.landing-home h1{
-    margin-top: 0px;
-    font-size: 4rem;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 0px;
+.landing-home h1 {
+  margin-top: 0px;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .landing-home em {
-    color: #ff7d27;
-    font-weight: 150;
-    font-style: normal;
+  color: #ff7d27;
+  font-weight: 150;
+  font-style: normal;
 }
 
 .landing-home span {
-    display: inline-block;
-    margin-top: -20px;
-    font-weight: 300;
-    font-size: 48px;
-    color: #fff;
-    padding-bottom: 20px;
+  display: inline-block;
+  margin-top: -20px;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
 .landing-home .primary-button {
-    margin-top: 15px;
+  margin-top: 15px;
 }
-.flourish-chart{
-    width: 80%;
-    height: 100px;
-    left: 10px;
+.flourish-chart {
+  width: 80%;
+  height: 80vh;
+  margin: 10%;
+  box-shadow: 4px 4px 8px 4px rgba(68, 52, 207, 0.2), 3px 6px 20px 10px rgba(105, 33, 134, 0.19);
 }
