@@ -25,6 +25,12 @@ const Login = ({ history, user, setUser }) => {
             <button class="glass" onClick={googleLogin}>
               Google
           </button>
+          <button class="glass" onClick={googleLogin}>
+              Facebook
+          </button>
+          <button class="glass" onClick={googleLogin}>
+              Github
+          </button>
           </div>
         </div>
       </div>
