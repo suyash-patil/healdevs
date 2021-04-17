@@ -34,6 +34,11 @@
 .landing-home .primary-button {
   margin-top: 15px;
 }
+
+.graph{
+  text-align: center;
+  margin-top: 20px;
+}
 .flourish-chart {
   width: 80%;
   height: 80vh;
