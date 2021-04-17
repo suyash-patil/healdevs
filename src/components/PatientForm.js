@@ -10,17 +10,21 @@ const PatientForm = ({ setUser, user }) => {
 
   useEffect(() => {
     let date = new Date()
-    db.collection("questions").onSnapshot((snapshot) => {
-      snapshot.docs.map((doc) => {
-        if (doc.data().email === user.email) {
-          if (doc.data().timestamp === date.getDate().toString() + date.getMonth().toString()) {
-            setFormVisible(false);
-            setInterval(history.push("/"), 2000)
+    if (user) {
+      db.collection("questions").onSnapshot((snapshot) => {
+        snapshot.docs.map((doc) => {
+          if (doc.data().email === user.email) {
+            if (doc.data().timestamp === date.getDate().toString() + date.getMonth().toString()) {
+              setFormVisible(false);
+              setInterval(history.push("/"), 2000)
+            }
           }
-        }
-      })
-    });
-
+        })
+      });
+    }
+    else {
+      history.push('/login');
+    }
   }, [])
 
   let history = useHistory()
