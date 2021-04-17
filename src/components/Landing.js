@@ -21,8 +21,8 @@ const Landing = ({ history, user, setUser }) => {
                     <Quote />
                 </div>
             </div>
-            <div class="graph-card">
             <h2 className="graph">Let's Understand it through the data of Canada</h2>
+            <div class="graph-card">
                 <div className="flourish-embed flourish-chart card" data-src="visualisation/5875049"></div>
             </div>
         </div>

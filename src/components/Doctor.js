@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { db } from '../firebase'
 import './doctor.css'
+import Login from '../auth/Login'
+import {Link} from 'react-router-dom';
 
 const Doctor = ({ history, user, setUser }) => {
 
@@ -28,19 +30,23 @@ const Doctor = ({ history, user, setUser }) => {
     <div>
       <div class="container-fluid doctor">
 
-        <div className="doctor-heading"><h2>This is the doctor name</h2></div>
+        <div className="doctor-heading"><h2>How's your patient feeling today?</h2></div>
 
         {
           data.map(({ userData, id }) => (
             <div class="doctor-box">
               <div class="patient-details-box">
                 <p class="email">{userData.email}</p>
-                <p class="diary">How are you feeling today?<br/>{userData.dailyDiary}</p>
+                <p class="diary">{userData.dailyDiary}</p>
               </div>
             </div>
           ))
         }
-        <div className="doctor-ending"></div>
+        <div className="end">
+        <div className="doctor-ending"><Link to='/login' className="Login">
+        Log Out 
+    </Link></div>
+    </div>
       </div>
     </div>
   )

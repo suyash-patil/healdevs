@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { db } from '../firebase';
 import './patientform.css'
 import { useHistory } from 'react-router-dom'
+import Quote from './quotes';
 
 const PatientForm = ({ setUser, user }) => {
 
@@ -48,6 +49,7 @@ const PatientForm = ({ setUser, user }) => {
   return (
     <div>
       <div className="patient">
+      <Quote/>
       <div className="diary-cards">
         {formVisible ? (
           <form onSubmit={handleSubmit}>

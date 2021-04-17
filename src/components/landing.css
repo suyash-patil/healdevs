@@ -37,11 +37,12 @@
 
 .graph{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5rem;
+  font-size: 2rem;
 }
 .flourish-chart {
   width: 80%;
-  height: 80vh;
+  height: 60vh;
   margin: 10%;
   box-shadow: 4px 4px 8px 4px rgba(68, 52, 207, 0.2),
     3px 6px 20px 10px rgba(105, 33, 134, 0.19);
