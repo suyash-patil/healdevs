@@ -33,9 +33,8 @@ const Login = ({ history, user, setUser }) => {
           </button>
           </div>
         </div>
-      </div>
-
-    </div>
+        </div>
+        </div>
   )
 }
 

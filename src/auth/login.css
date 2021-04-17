@@ -5,6 +5,9 @@
   background-position: top;
   background-image: url(../images/img4.jpg);
   width: 100%;
+}
+
+.login {
   margin-top: 0%;
   height: 100vh;
   font-family: Arial, Helvetica;
