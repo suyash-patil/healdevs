@@ -12,10 +12,7 @@ const Landing = ({ history, user, setUser }) => {
             <div class="landing-home" style={{ backgroundImage: '../images/img1.jpg' }}>
                 <div class="container">
                     <div class="first-content">
-                        <Wave text="Mental Therapay Space"
-                            effect="fadeOut"
-                            effectDuration="8"
-                            style={{ color: "red" }} />
+                        <h1>Mental Therapy Space</h1>
                         <span><em>By</em> HealDevs</span>
                         <a class="fa fa-angle-down page-scroll" href="#about"></a>
                         <Navbar />

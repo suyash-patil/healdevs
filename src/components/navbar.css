@@ -2,8 +2,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
-    font-weight: 500;
-
+    
 }
 .button{
     background-color: white;
@@ -12,4 +11,11 @@
     height: 40px;
     text-align: center;
     border-radius: 10px;
+    opacity:0.5;
+}
+.button:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
 }
