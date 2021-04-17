@@ -18,12 +18,13 @@ const Landing = ({ history, user, setUser }) => {
                         <a class="fa fa-angle-down page-scroll" href="#about"></a>
                         <Navbar />
                     </div>
-                    <Quote/>
+                    <Quote />
                 </div>
             </div>
-            <div className="flourish-embed flourish-chart" data-src="visualisation/5875049"></div>
+            <div class="graph-card">
+                <div className="flourish-embed flourish-chart card" data-src="visualisation/5875049"></div>
+            </div>
         </div>
     )
 }
-
 export default Landing
