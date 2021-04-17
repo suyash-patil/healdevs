@@ -1,0 +1,62 @@
+.patient {
+  width: 100%;
+  height: 100vh;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  margin-top: -10%;
+  padding-top: 10%;
+}
+.diary-cards {
+  margin: 10% 5% 10% 5%;
+  width: 80%;
+  padding: 5% 5% 5% 5%;
+  background: rgba(26, 26, 26, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.diary-cards p {
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.diary-button {
+  background-image: linear-gradient(
+    to right,
+    #285667 0%,
+    #33abdb 51%,
+    #314755 100%
+  );
+}
+.diary-button {
+  margin: 20px 0px 0px 0px;
+  padding: 5px 30px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.diary-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.dairy-text {
+  background-color: #9fddf8;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+  font-size: 20px;
+  color:#285667;
+  font-style:italic;
+}

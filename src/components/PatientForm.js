@@ -47,20 +47,24 @@ const PatientForm = ({ setUser, user }) => {
 
   return (
     <div>
-      {formVisible ? (
-        <form onSubmit={handleSubmit}>
-          <p>How are you feeling today?</p>
-          <textarea onChange={(e) => setDiary(e.target.value)}>
-            {diary}
-          </textarea>
-          <br />
-          <button type="submit">
-            Submit
+      <div className="patient">
+      <div className="diary-cards">
+        {formVisible ? (
+          <form onSubmit={handleSubmit}>
+            <p>How are you feeling today?</p>
+            <textarea class="dairy-text" onChange={(e) => setDiary(e.target.value)}>
+              {diary}
+            </textarea>
+            <br />
+            <button type="submit" className="diary-button">
+              Submit
         </button>
-        </form>
-      ) : (
-        <h2>You have filled the form</h2>
-      )}
+          </form>
+        ) : (
+          <h2>You have filled the form</h2>
+        )}
+      </div>
+      </div>
     </div>
   )
 }

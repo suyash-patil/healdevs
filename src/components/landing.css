@@ -43,5 +43,12 @@
   width: 80%;
   height: 80vh;
   margin: 10%;
-  box-shadow: 4px 4px 8px 4px rgba(68, 52, 207, 0.2), 3px 6px 20px 10px rgba(105, 33, 134, 0.19);
+  box-shadow: 4px 4px 8px 4px rgba(68, 52, 207, 0.2),
+    3px 6px 20px 10px rgba(105, 33, 134, 0.19);
+  background: rgba(26, 26, 26, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
