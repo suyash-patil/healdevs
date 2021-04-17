@@ -11,6 +11,7 @@ const Login = ({ history, user, setUser }) => {
       const { user } = result;
       const idTokenResult = await user.getIdTokenResult();
       setUser({ email: user.email, token: idTokenResult.token })
+      history.push("/patient");
     }).catch((err) => {
       console.log(err)
     })
@@ -25,10 +26,10 @@ const Login = ({ history, user, setUser }) => {
             <button class="glass" onClick={googleLogin}>
               Google
           </button>
-          <button class="glass" onClick={googleLogin}>
+            <button class="glass" onClick={googleLogin}>
               Facebook
           </button>
-          <button class="glass" onClick={googleLogin}>
+            <button class="glass" onClick={googleLogin}>
               Github
           </button>
           </div>
