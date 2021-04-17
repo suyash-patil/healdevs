@@ -22,6 +22,8 @@ const Landing = ({ history, user, setUser }) => {
                     </div>
                 </div>
             </div>
+            <PatientForm setUser={setUser} user={user} />
+            <div className="flourish-embed flourish-chart" data-src="visualisation/5875049"></div>
             <Link to="/patient">Fill the form</Link>
         </div>
     )
