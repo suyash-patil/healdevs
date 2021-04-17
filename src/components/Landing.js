@@ -1,7 +1,7 @@
 import React from 'react';
 import './landing.css';
 import Navbar from './Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Landing = () => {
     return (
