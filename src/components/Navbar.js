@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="button">
             <Link to='/login' className="Login">
-                Login
+                Start
             </Link>
         </div>
     )
