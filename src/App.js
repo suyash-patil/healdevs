@@ -25,7 +25,7 @@ const App = () => {
   }, [])
   return (
     <Switch>
-      <Route exact path='/' component={Landing} />
+      <Route exact path='/' render={(props) => (<Landing {...props} setUser={setUser} user={user} />)} />
       <Route exact path='/login' component={Login} />
     </Switch>
   );
