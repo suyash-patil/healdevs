@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { auth, googleAuthProvider } from '../firebase'
 import { Link } from 'react-router-dom'
+import './login.css';
 
 
 const Login = ({ history, user, setUser }) => {
@@ -17,9 +18,17 @@ const Login = ({ history, user, setUser }) => {
 
   return (
     <div>
-      <button onClick={googleLogin}>
-        Login with Google
+      <div class="container-fluid login">
+        <div class="blurred-box">
+          <div class="user-login-box">
+            <div class="user-name">Login</div>
+            <button class="glass" onClick={googleLogin}>
+              Google
           </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
