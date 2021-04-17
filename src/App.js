@@ -8,6 +8,7 @@ import { auth } from './firebase';
 import { Switch, Route } from "react-router-dom";
 import Login from './auth/Login';
 import Landing from './components/Landing';
+import PatientForm from './components/PatientForm';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -26,7 +27,8 @@ const App = () => {
   return (
     <Switch>
       <Route exact path='/' render={(props) => (<Landing {...props} setUser={setUser} user={user} />)} />
-      <Route exact path='/login' component={Login} />
+      <Route exact path='/login' render={(props) => (<Login {...props} setUser={setUser} user={user} />)} />
+      <Route exact path='/patient' render={(props) => (<PatientForm {...props} setUser={setUser} user={user} />)} />
     </Switch>
   );
 }

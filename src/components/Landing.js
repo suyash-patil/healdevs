@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './landing.css';
 import Navbar from './Navbar';
-import PatientForm from './PatientForm';
 
 
 const Landing = ({ history, user, setUser }) => {
@@ -17,7 +17,7 @@ const Landing = ({ history, user, setUser }) => {
                     </div>
                 </div>
             </div>
-            {/* <PatientForm setUser={setUser} user={user} /> */}
+            <Link to="/patient">Fill the form</Link>
         </div>
     )
 }
