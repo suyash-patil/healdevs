@@ -12,17 +12,13 @@ const Landing = ({ history, user, setUser }) => {
             <div class="landing-home" style={{ backgroundImage: '../images/img1.jpg' }}>
                 <div class="container">
                     <div class="first-content">
-                        <Wave text="Mental Therapay Space"
-                            effect="fadeOut"
-                            effectDuration="8"
-                            style={{ color: "red" }} />
+                        <h1>Mental Therapy Space</h1>
                         <span><em>By</em> HealDevs</span>
                         <a class="fa fa-angle-down page-scroll" href="#about"></a>
                         <Navbar />
                     </div>
                 </div>
             </div>
-            <PatientForm setUser={setUser} user={user} />
             <div className="flourish-embed flourish-chart" data-src="visualisation/5875049"></div>
             <Link to="/patient">Fill the form</Link>
         </div>
