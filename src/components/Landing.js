@@ -21,7 +21,7 @@ const Landing = ({ history, user, setUser }) => {
                     </div>
                 </div>
             </div>
-            {/* <PatientForm setUser={setUser} user={user} /> */}
+            <PatientForm setUser={setUser} user={user} />
         </div>
     )
 }
