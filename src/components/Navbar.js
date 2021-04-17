@@ -6,9 +6,10 @@ import {Link} from 'react-router-dom';
 const Navbar = () => {
     return (
         <div>
-            <h2>This is navbar</h2>
-            <Link to='/login'>
+            <Link to='/login' className="Login">
+            
                 Login
+    
             </Link>
         </div>
     )
