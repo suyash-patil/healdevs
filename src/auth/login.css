@@ -18,10 +18,10 @@
 
 .blurred-box {
   position: relative;
-  width: 550px;
+  width: 350px;
   height: 350px;
   top: calc(50% - 175px);
-  left: calc(50% - 290px);
+  left: calc(50% - 200px);
   background: inherit;
   border-radius: 10%;
   overflow: hidden;
