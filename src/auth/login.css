@@ -3,7 +3,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  background-image: url(../images/img4.jpg);
+  background-image: url(../images/img2.jpg);
   width: 100%;
 }
 
@@ -18,10 +18,10 @@
 
 .blurred-box {
   position: relative;
-  width: 250px;
+  width: 550px;
   height: 350px;
   top: calc(50% - 175px);
-  left: calc(50% - 125px);
+  left: calc(50% - 290px);
   background: inherit;
   border-radius: 10%;
   overflow: hidden;
@@ -29,7 +29,7 @@
 
 .blurred-box:after {
   content: "";
-  width: 300px;
+  width: 500px;
   height: 400px;
   background: inherit;
   position: absolute;
@@ -46,6 +46,10 @@
   margin-top: 50px;
   text-align: center;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .user-login-box > * {
   display: inline-block;
@@ -56,7 +60,7 @@
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: white;
+  color: black;
 }
 
 .glass {
@@ -68,28 +72,30 @@
   border-radius: 50px;
   -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .glass:hover{
-  background: #8bd1ba; 
-  background: -moz-linear-gradient(top, #8bd1ba 0%, #56c287 100%); /* FF3.6+ */
+  color: white;
+  background: black; 
+  background: -moz-linear-gradient(top, black 0%, grey 100%); /* FF3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0%, #8bd1ba),
-    color-stop(100%, #56c287)
+    color-stop(0%, black),
+    color-stop(100%, grey)
   ); 
   background: -webkit-linear-gradient(
     top,
-    #8bd1ba 0%,
-    #56c287 100%
+    black 0%,
+    grey 100%
   ); 
   background: -o-linear-gradient(
     top,
-    #8bd1ba 0%,
-    #56c287 100%
+    black 0%,
+    grey 100%
   ); 
-  background: -ms-linear-gradient(top, #8bd1ba 0%, #56c287 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #8bd1ba 0%, #56c287 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bd1ba', endColorstr='#56c287', GradientType=0 ); /* IE6-9 */
+  background: -ms-linear-gradient(top, black 0%, grey 100%); /* IE10+ */
+  background: linear-gradient(to bottom, black 0%, grey 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='black', endColorstr='grey', GradientType=0 ); /* IE6-9 */
 }
