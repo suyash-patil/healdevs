@@ -2,9 +2,10 @@ import React from 'react';
 import './landing.css';
 import Navbar from './Navbar';
 import { Wave } from 'react-animated-text';
+import PatientForm from './PatientForm';
 
 
-const Landing = () => {
+const Landing = ({ history, user, setUser }) => {
     return (
         <div>
             <div class="landing-home" style={{ backgroundImage: '../images/img1.jpg' }}>
@@ -20,6 +21,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            {/* <PatientForm setUser={setUser} user={user} /> */}
         </div>
     )
 }
