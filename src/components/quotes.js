@@ -4,8 +4,6 @@ import './quotes.css';
 
 const Quote = ()=> {
     const [quote, setQuote] = useState('');
-  const [author, setAuthor] = useState('');
-
   useEffect(() => {
     getQuote()
   }, []);
