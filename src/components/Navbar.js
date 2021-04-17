@@ -5,11 +5,9 @@ import './navbar.css'
 import {Link} from 'react-router-dom';
 const Navbar = () => {
     return (
-        <div>
+        <div className="button">
             <Link to='/login' className="Login">
-            
                 Login
-    
             </Link>
         </div>
     )
