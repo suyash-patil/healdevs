@@ -29,6 +29,7 @@ const Doctor = ({ history, user, setUser }) => {
         data.map(({ userData, id }) => (
           <div>
             <p>{userData.email}</p>
+            <p>How are you feeling today?</p>
             <p>{userData.dailyDiary}</p>
           </div>
         ))
