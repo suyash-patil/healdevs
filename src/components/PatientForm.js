@@ -8,6 +8,8 @@ const PatientForm = ({ setUser, user }) => {
   const [diary, setDiary] = useState("");
   const [formVisible, setFormVisible] = useState(true);
 
+  let history = useHistory()
+
   useEffect(() => {
     let date = new Date()
     if (user) {
@@ -16,7 +18,7 @@ const PatientForm = ({ setUser, user }) => {
           if (doc.data().email === user.email) {
             if (doc.data().timestamp === date.getDate().toString() + date.getMonth().toString()) {
               setFormVisible(false);
-              setInterval(history.push("/"), 2000)
+              history.push("/");
             }
           }
         })
@@ -25,9 +27,8 @@ const PatientForm = ({ setUser, user }) => {
     else {
       history.push('/login');
     }
-  }, [])
+  }, [history, user])
 
-  let history = useHistory()
   const handleSubmit = (e) => {
     e.preventDefault();
     const date = new Date();
@@ -48,6 +49,7 @@ const PatientForm = ({ setUser, user }) => {
     <div>
       {formVisible ? (
         <form onSubmit={handleSubmit}>
+          <p>How are you feeling today?</p>
           <textarea onChange={(e) => setDiary(e.target.value)}>
             {diary}
           </textarea>

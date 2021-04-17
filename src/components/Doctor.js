@@ -35,7 +35,7 @@ const Doctor = ({ history, user, setUser }) => {
             <div class="doctor-box">
               <div class="patient-details-box">
                 <p class="email">{userData.email}</p>
-                <p class="diary">{userData.dailyDiary}</p>
+                <p class="diary">How are you feeling today?<br/>{userData.dailyDiary}</p>
               </div>
             </div>
           ))
